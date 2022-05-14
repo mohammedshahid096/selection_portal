@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: large;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #00b4f0;
+    
+    
+}
+
+.loginbox{
+    top: 70%;
+    left: 50%;
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 40px;
+    border-radius: 20px;
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input{
+    margin-bottom: 20px;
+}
+.submit .cb{
+    align-content: center;
+   border-radius: 25px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+input[type="submit"]{
+    height: 40px;
+   width: 50%;
+   align-content: center;
+   border-radius: 25px;
+   border: none;
+   color: #fff;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: red;
+    
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(246, 169, 124);
+    color: #000;
+}
+.loginbox .cross{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+.loginbox .namess{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+.namess .ware input[type="text"]{
+    font-size: medium;
+    width: 50%;
+}
+/*
+input[type="email"]{
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+.loginbox .name{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 2 - 40px);
+    justify-content: space-between;
+
+}*/
+.loginbox form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    
+    /*width: calc(100% / 2 - 40px);*/
+}
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    
+}/*
+.loginbox form .names{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+form .names .box{
+    width: calc(100% / 2 - 20px);
+}*/
+form .user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    font-size: medium;
+}
+form .user-details .input-box .log{
+    width: 70%;
+    height: 40px;
+}
+.loginbox .head1{
+    float: left;
+}
+
+form .lgn::after{
+    content: "*";
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+/*drop down box*/
+
+.multi-selector{
+    width: 100%;
+}
+.select-field{
+    border: 1px solid black;
+}
+.select-field,.lang,.list{
+    
+    width: 100%;
+    background-color: white;
+}
+.list{
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    display: none;
+    box-sizing: 50%;
+}
+.down-arrow{
+    /*font-size: 1.2rem;*/
+    /*display: inline-block;*/
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.lang span{
+    font-size: large;
+    
+}
+.lang:hover{
+    background-color: rgb(139, 192, 206);
+}
+.lang{
+    display: block;
+    padding-left: 0;
+}
+.show{
+    display: block;
+}
+.rotate180{
+    transform: rotate(180deg);
+}
+.multi-selector{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/*The social media icons*/
+
+.social-media ul{
+   
+    display: flex;
+    
+    
+}
+.social-media ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+.social-media ul li .fa {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .6s;
+    color: black;
+}
+.social-media ul li .fa:hover{
+    color: #fff;
+}
+
+.social-media ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+}
+.social-media ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+.social-media ul li:nth-child(1) a:hover{
+    background-color: #3b5999;
+    
+}
+.social-media ul li:nth-child(2) a:hover{
+    background-color: #37800d;
+    
+}
+.social-media ul li:nth-child(3) a:hover{
+    background-color: #48d4ec;
+    
+}
+.social-media ul li:nth-child(4) a:hover{
+    background-color: #a2c40d;
+    
+}
+
+/*profile picture*/
+
+
+.upload{
+    width: 100px;
+    position: relative;
+    margin: auto;
+
+}
+.upload img{
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+
+}
+.upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00b4f0;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.upload .round input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+.upload .round input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+    </style>
+    <body>
+        
+        <div class="loginbox">
+        
+              
+            <form action="form.html">
+                <div class="upload">
+                    <img src="profile.png" height="100" width="100" alt="">
+                    <div class="round">
+                        <input type="file" required>
+                        <i class="fa fa-camera" style="color: black;"></i>
+                    </div>
+                </div>
+                <div class="namess">
+                    <div class="smedia">
+                        <div class="ware">
+                            <span class="lgn">First Name</span>
+                            <input type="text" required placeholder="enter first name">
+                        </div>
+                    <div class="ware">
+                        <span class="lgn">Last Name</span>
+                        <input type="text" required placeholder="enter last name">
+                    </div>
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/taha-tahseen-24622a221/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/Taha-t2001"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://trailhead.salesforce.com/today"><i class="fa fa-cloud"></i></a></li>
+                            <li><a href="https://accounts.google.com/b/0/AddMailService"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                
+                <br>
+                <h1 class="head1">Personal information</h1><h1 class="head2">Professional information</h1><br><br>
+                <div class="user-details">
+                    
+                        
+                    <div class="input-box">
+                        <span class="lgn">Email</span>
+                        <input type="email" placeholder="abcd@gmail.com" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Adhaar Card</span>
+                        <input type="text" placeholder="enter adhaar card number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Mobile</span>
+                        <input type="tel"  placeholder="enter mobile number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Visiting Card</span>
+                        <input type="text" placeholder="enter adhaar card number" class="name" name="Add" required>
+                    </div>
+                    <div class="cross">
+                        <div class="gen">
+                            <span class="lgn">Gender</span>
+                            <select name="gender"><option value="selected">MALE</option><option value="selected">FEMALE</option></select>
+                    
+                        </div>
+                    
+                        <div class="dob">
+                            <span class="lgn" >Date of birth</span>
+                            <input type="date" name="" id="" min="1995" max="2022" required>
+                        
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">License</span>
+                        <input type="text" placeholder="enter adhaar card number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <div class="multi-selector">
+                            <div class="lgn">Languages Known</div>
+                            <div class="select-field">
+                                
+                                
+                                <span class="down-arrow">choose language&nbsp;&nbsp;&nbsp;&blacktriangledown;</span>
+                            </div>
+                            <div class="list">
+                                
+                                <lable for="l1" class="lang">1
+                                    <span>English</span><input type="checkbox" id="l1">
+                                </lable>
+                                <label for="l2" class="lang">2
+                                    <span>Telugu</span><input type="checkbox" id="l2">
+                                </lable>
+                                <label for="l3" class="lang">3
+                                    <span>Hindi</span><input type="checkbox" id="l3">
+                                </label>
+                                
+                            </div>
+                            <script>
+                                document.querySelector('.select-field').addEventListener('click',()=>{
+                                    document.querySelector('.list').classList.toggle('show');
+                                    document.querySelector('.down-arrow').classList.toggle('rotate180');
+                                })
+                            </script>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Union Card</span>
+                        <input type="text" placeholder="enter adhaar card number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Office No./House No./flat name</span>
+                        <input type="text" placeholder="74 D crystal palm" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Equipments you use</span>
+                        <input type="text" placeholder="enter adhaar card number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Street name/Society Name</span>
+                        <input type="text" placeholder="Runwal Garden City" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Experience</span>
+                        <input type="number" value="5" placeholder="enter adhaar card number" class="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Landmark Name</span>
+                        <input type="text" placeholder="near temple" class="name" size="30" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="lgn">Profession</span>
+                            <select name="prof" required>
+                                <option value="0">Engineer</option>
+                                <option value="1">Chief Executive</option>
+                                <option value="2"> Sports and Media</option>
+                                <option value="3">Advertising, Marketing</option>
+                                <option value="4">Photographer</option>
+                                <option value="5">Construction Manager</option>
+                                <option value="6">Engineering Manager</option>
+                                <option value="7">Accountant, Auditor</option>
+                                <option value="8">Business Operations </option>
+                                <option value="9">Business Owner</option>
+                                <option value="10">Executive,Financial</option>
+                                <option value="11">Postsecondary Teacher</option>
+                                <option value="12">Primary, Secondary Teacher</option>
+                                <option value="13">Arts, Design, Entertainment</option>
+                                <option value="14">Computer Specialist</option>
+                                <option value="15">Lawyer, Judge</option> 
+                                <option value="16">Other Professional Occupation</option>
+                              </select>
+                        
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="lgn">State/province</span>
+                        <input type="text" placeholder="Telangana" class="name" size="30" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">City</span>
+                        <input type="text" placeholder="Hyderabad" class="name" size="30" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="lgn">pincode</span>
+                        <input type="text" placeholder="234532" class="name" size="30" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="lgn">Country</span>
+                        <select name="state" required>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                            </select>
+                    </div>  
+                </div>
+                <br><br>
+                <div class="submit">
+                    <span class="cb"><input type="checkbox" required> I acknowedge that the provided details are correct.</span>
+                    <input type="submit" value="login" class="login" required>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    </body>
+
+</head>
+</html>

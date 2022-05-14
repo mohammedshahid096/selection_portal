@@ -1,0 +1,283 @@
+<html>
+<head>
+   <title>STUDENT FORM</title>
+   <link rel="stylesheet" href="./style.css">
+<style>
+{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+form{
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.flower{
+    width:200px;
+    clip-path:circle();
+display:grid;
+place-content:center;
+}
+.firstname{
+position:relative;
+left:-534x;
+top:78px;
+line-height:40px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.lastname{
+position:relative;
+left:-326px;
+top:30px;
+line-height:40px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.firstlabel{
+position:relative;
+font-size:14px;
+left:-270px;
+top:-7px;
+}
+.lastlabel{
+position:relative;
+font-size:14px;
+left:10px;
+top:-30px;
+}
+
+#name{
+width:655px;
+height:50px;
+margin-top:300px;
+display:grid;
+place-content:center;
+display:block;}
+
+.firstdiv{
+width:400px;
+height:700px;
+border:2px solid black;
+}
+.seconddiv{
+width:400px;
+height:550px;
+border:2px solid black;
+}
+.ackdiv{
+width:400px;
+height:100px;
+border:0px solid black;
+}
+.big-input{
+    border-radius:10px;
+height:28px;
+width:260px;
+margin-left:10px;
+}
+.small-input{
+border-radius:5px;
+height:35px;
+width:120px;
+margin-left:10px;
+}
+.small-input1{
+border-radius:3px;
+height:35px;
+width:120px;
+margin-left:25px;
+}
+.big-input1{
+border-radius:20px;
+height:35px;
+width:300px;
+margin-left:25px;
+}
+.textarea{
+border-radius:10px;
+margin-top:4px;
+width:290px;
+height:80px;
+font-size:13px;
+border:1px solid #9e9e9e;
+}
+#submit{
+font-size:20px;
+font-weight:10px;
+border-radius:10px;
+width:200px;
+top:900px;
+height:50px;
+padding:5px 5px 5px 5px;
+}
+</style>
+</head>
+<body>
+
+<form style="position:relative;left:15%;right:15%;">
+   <img src="C:\Users\Alekhya\Pictures\picture\flower.jpg" class="flower" alt="flower"><br>
+   <div id="name">
+   <input class="firstname" type="text" name="firstname"><br>
+   <label class="firstlabel">first name</label>
+   <input class="lastname" type="text" name="lastname"><br>
+   <label class="lastlabel">last name</label>
+   </div>
+</form>
+
+<table style="position:absolute;top:450px;left:5%;right:15%;place-content:center;
+">
+<tr>
+ <td rowspan="2">
+<div class="firstdiv">
+<h7><center>----Personal information---</center></h7>
+
+<div class="field" class="input-group">
+ Email*<br>
+ <input class="big-input" value="manicaageller123@gmail.com" type="text">
+</div>
+
+<div style="field" class="input-group">
+Mobile*<br>
+<input class="big-input" value="+919848574181" type="text">
+</div>
+
+
+                        <div style="display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width:150px;">
+                                Gender* <br>
+                                <input class="small-input" value="  Female" type="text">
+                            </span>
+                            <span style="float:right;width:150px;margin-left: 20px;">
+                                Date of Birth*<br>
+                                <input class="small-input" style="margin-right: 40px;" type="text"
+                                    placeholder="11-02-2005 &#xf274;">
+                            </span>
+                            <br><br><br>
+                        </div>
+<div class="field">
+                            Languages Known.*<br>
+                        
+                            <input class="big-input" type="text" value="  English  Hindi">
+                        </div>
+
+                        <div class="field">
+                            Office No./House No/Flat No.*<br>
+                            <input class="big-input" value="   74 D Crystal Palm" type="text">
+                        </div>
+
+                        <div class="field">
+                            Street name/Society Name*<br>
+                            <input type="text" value="   Runwal Garden City"class="big-input" >
+                        </div>
+                        <div class=" field">
+                            Landmark name*<br>
+                            <input class="big-input" value="   Near Ram Temple"type="text" >
+                        </div>
+
+
+  <div style=" display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width: 150px;;">
+                                Pincode*<br>
+                                <input class="small-input" value="   380001"type="text">
+                            </span>
+                            <span style="float:right;width: 115px;;margin-left: 20px;">
+                                Country*<br>
+                                <input class="small-input" value="   India" style="margin-right: 40px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div>
+
+
+                        <div style="display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width: 150px;;">
+                                City* <br>
+                                <input class="small-input" value="   Bangalore"type="text">
+                            </span>
+                            <span style="float:right;width: 150px;;margin-left: 20px;">
+                                State/Province*<br>
+                                <input class="small-input" value="   Karnataka"style="margin-right: 40px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div>
+
+</div>
+</td>
+<td>
+<div class="seconddiv">
+<h7><center>----profession information----</center></h7>
+
+
+
+<div style="display:flex;align-items: flex-start;margin-left: -0px ;margin-bottom:10px;">
+                            <span style="float: left;width:130px;">
+                                Profession*<br>
+                                <input class="small-input1" value="   Photographer"type="text">
+                            </span>
+                            <span style="float:right;width:150px;margin-left:20px;">
+                                Experience(in Years)* <br>
+                                <input class="small-input1" value="   10    "style="width: 150px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div><br>
+
+
+                        <div class="field-1" style="margin-left:20px;">
+                            Studio Name*<br>
+                            <input class="big-input1" value="    Dream Photography Studio"style="height:30px" type="text">
+                        </div><br>
+                        <div class="field-1 " style="margin-left:20px;">
+                            Aadhar Card*<br>
+                            <input class="big-input1" style="height:30px" type="text">
+                        </div><br>
+                        <div class="field-1" style="margin-left:20px">
+                            License*<br>
+                            <input class="big-input1" style="height:30px" type="text">
+                        </div><br>
+                        <div class="field-1" style="margin-left:20px">
+                            Visiting Card*<br>
+                            <input class="big-input1" style="height:30px" type="text">
+                        </div><br>
+                        <div class="field-1" style="margin-left:20px;">
+                            Union Card*<br>
+                            <input class="big-input1" style="height:30px" type="text">
+                        </div><br>
+                        <div class="field-1" style="margin-left:20px;">
+                            Equipments you use *<br>
+                            
+                            <div class="textarea">
+
+                                <span style="float: right;line-height: 24px;">+Add More</span><br>
+                                <span style="line-height: 24px;">Canon EOS 5D Mark iv 30.4 MP DSLR<input
+                                        type="radio"></span><br>
+                                <span style="line-height: 24px;"> ForexZone Drone with 4K Camera Live Video<input
+                                        type="radio"></span><br>
+
+                           
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            <tr>
+                <td>
+                    <div class="ackdiv">
+                        <input class="dec" type="checkbox" checked>&nbsp;&nbsp;I acknowledge that the provided details
+                        are corrext.
+                    </div>
+                </td>
+            </tr>
+</table>
+
+ <div style="display:grid;place-items:center;margin-bottom:50px;margin-top:900px;">
+            <input class="btn btn-primary btn-lg" id="submit" type="submit" value="Submit">
+            
+        </div>
+</div>
+
+</body>
+</html>

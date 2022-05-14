@@ -1,0 +1,527 @@
+
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sample Resume</title>
+    <meta name=" viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit-no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+html {
+    font-size: 10px;
+}
+
+.main-div {
+    width: 70vw;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    margin-left: 15%;
+    margin-right: 15%;
+    border:1px solid black;
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+.face {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+}
+
+.face-div {
+    display: grid;
+    place-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inner-div {
+    width: 30vw;
+    background-color: white;
+    padding: 3rem 8rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    margin-right: 20px;
+    margin-left: +20px;
+    border: 1px solid black;;
+    
+
+
+}
+.addiv{
+    border:1px solid black;
+    border-radius: 10px;;
+
+}
+
+#addb{
+    width:60px;
+    height:20px;
+    background-color:orangered;
+    color:white;
+    float:right;
+    margin-right:10px;
+    margin-top: 2px;;
+    margin-bottom:2px;
+
+}
+
+hr{
+    border-width: 1px;
+    border-color: black;
+    margin-top: 15px;;
+}
+
+.big-input {
+    border-radius: 10px;
+    height: 28px;
+    width: 260px;
+}
+
+.big-input1 {
+    border-radius: 10px;
+    height: 40px;
+    width: 290px;
+    margin-left: -20px;
+    border:1px solid black;
+}
+
+.small-input1 {
+    border-radius: 5px;
+    border:1px solid black;
+    height: 35px;
+    width: 120px;
+    
+}
+
+.small-input {
+    border-radius: 5px;
+    height: 25px;
+    width: 120px;
+    border:1px solid black;
+}
+
+.small-inputx {
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+}
+
+.dec {
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+}
+
+input {
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+}
+
+.field {
+    width: 308px;
+    ;
+    margin-bottom: 20px;
+    margin-right: -150px;
+
+}
+
+.fieldx {
+    width: 108px;
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: -150px;
+
+}
+
+.val {
+    border: 1px solid #9e9e9e;
+
+    border-radius: 5px;
+    width: 50%;
+
+}
+
+span {
+    margin-top: 5px;
+}
+
+
+.field-1 {
+    margin-right: 20px;
+    margin-right: 20px;
+
+
+}
+
+.material-symbols-outlined {
+    float: right;
+    color: #76ff03;
+
+}
+
+#name {
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    width:150px;
+}
+
+
+
+.txarea {
+    border-radius: 10px;
+    margin-top: 4px;
+    width: 290px;
+    height: 80px;
+    font-size: 13px;
+    border: 1px solid black;
+}
+
+#submit {
+    font-size: 20px;
+    font-weight: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 5px 5px 5px 5px;
+}
+
+#star{
+    color:rgb(226, 14, 14);;
+}
+</style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="face-div">
+
+            <img class="face"
+                src="data:image/jpeg;base64,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">
+        </div>
+        <table class="face-div" style="padding-bottom:30px;">
+
+            <tr>
+                <td>
+                    <div class="field">
+                        First Name<span id="star">*</span><br>
+
+                        <div class="val">
+                            <span class="material-symbols-outlined">
+                                check_circle
+                            </span>
+                            <input type="text" style="width:95px;height:40px;" id="name" value="Robert">
+
+
+                        </div>
+                    </div>
+                </td>
+                <td>
+
+                    <div class="field" style="margin-left:30px;">
+                        Last Name<span id="star">*</span><br>
+
+                        <div class="val">
+                            <span class="material-symbols-outlined">
+                                check_circle
+                            </span>
+                            <input type="text"  style="width:95px;height:40px;" id="name" value="Hooke">
+
+
+
+                        </div>
+                    </div>
+                </td>
+
+
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <div class="inner-div"
+                        style="padding-top:30px;margin-top:-30px;padding-bottom:45px;margin-bottom:13px;">
+
+                        <div style="display:flex;width:367px;margin-left:-50px;margin-bottom: 20px;">
+                            <hr width='100px'><span width='90px' style="padding-left:10px;padding-right: 10px;;">
+                                Personal Information</span>
+                            <hr width="75px">
+                        </div>
+
+                        <div class="field" class="input-group">
+                            Email<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+
+                                <input type="text" width="200px" value="hiba_13@gmail.com" id="name">
+
+                            </div>
+
+                        </div>
+
+                        <div class="field" class="input-group">
+                            Mobile<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+
+                                <input type="text" value="  +919848574181" id="name">
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div style="display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width:150px;">
+                                Gender<span id="star">*</span> <br>
+                                <input class="small-input" value="  Female" type="text">
+                            </span>
+                            <span style="float:right;width:150px;margin-left: 20px;">
+                                Date of Birth<span id="star">*</span><br>
+                                <input class="small-input" style="margin-right: 40px;" type="text"
+                                    placeholder="11-02-2005 &#xf274;">
+                            </span>
+                            <br><br><br>
+                        </div>
+
+                        <div class="field">
+                            Languages Known.<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+                                &nbsp;&nbsp;
+                                English
+                                <input type="radio">
+                                &nbsp;&nbsp;&nbsp;
+                                Hindi
+                                <input type="radio">
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="field">
+                            Office No./House No/Flat No.<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+
+                                <span class="material-symbols-outlined" style="color:grey;">
+                                    check_circle
+                                </span>
+
+
+                                <input type="text" id="name">
+
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            Street name/Society Name<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+
+                                <span class="material-symbols-outlined" style="color:grey;">
+                                    check_circle
+                                </span>
+
+
+                                <input type="text" id="name">
+
+                            </div>
+                            <!--<input type="text" value="   Runwal Garden City" class="big-input">-->
+                        </div>
+                        <div class=" field">
+                            Landmark name<span id="star">*</span><br>
+                            <div class="addiv" style="width:260px;height:30px;">
+
+                                <span class="material-symbols-outlined" style="color:grey;">
+                                    check_circle
+                                </span>
+
+
+                                <input type="text" id="name">
+
+                            </div>
+                        </div>
+
+                        <div style=" display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width: 150px;;">
+                                Pincode<span id="star">*</span><br>
+                                <input class="small-input" value="   380001" type="text">
+                            </span>
+                            <span style="float:right;width: 115px;;margin-left: 20px;">
+                                Country<span id="star">*</span><br>
+                                <input class="small-input" value="   India" style="margin-right: 40px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div>
+
+
+                        <div style="display:flex;align-items: flex-start ;margin-bottom:10px;">
+                            <span style="float: left;width: 150px;;">
+                                City<span id="star">*</span> <br>
+                                <input class="small-input" value="   Bangalore" type="text">
+                            </span>
+                            <span style="float:right;width: 150px;;margin-left: 20px;">
+                                State/Province<span id="star">*</span><br>
+                                <input class="small-input" value="   Karnataka" style="margin-right: 40px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div>
+
+
+
+
+
+                    </div>
+                </td>
+                <td>
+
+                    <div class="inner-div" style="height:610px;margin-top:-57px;">
+
+                        <div style="display:flex;width:367px;margin-left:-50px;margin-bottom: 20px;;">
+                            <hr width='100px'><span width='90px' style="padding-left:10px;padding-right: 10px;;">
+                                Professional Information</span>
+                            <hr width="55px">
+                        </div>
+
+                        <div style="display:flex;align-items: flex-start;margin-left: -20px ;margin-bottom:10px;">
+                            <span style="float: left;width:130px;">
+                                Profession<span id="star">*</span><br>
+                                <input class="small-input" value="   Photographer" type="text">
+                            </span>
+                            <span style="float:right;width:150px;margin-left:20px;">
+                                Experience(in Years)<span id="star">*</span> <br>
+                                <input class="small-input" value="   10    " style="width: 150px;" type="text">
+                            </span>
+                            <br><br><br>
+                        </div><br>
+
+
+                        <div class="field-1" style="margin-top:-15px;">
+                            Studio Name<span id="star">*</span><br>
+                            <input class="big-input1" value="    Dream Photography Studio" style="height:30px"
+                                type="text">
+                        </div><br>
+                        <div style="margin-left:-20px; ">
+                            Aadhar Card<span id="star">*</span><br>
+                            <div class="addiv" style="width:290px;height:30px;">
+                                <span>
+                                    <button type="button" id="addb" class="btn btn-secondary btn-lg" disabled>
+                                        <b
+                                            style="font-size:15px;padding-left:10px;padding-right:10px;margin-top:-7px;padding-top:-15px;display:grid;place-content: center;">ADD</b></button>
+                                </span>
+                                <input type="text" id="name">
+
+                            </div>
+
+
+                            <!--<input class="big-input1" style="height:30px" type="text">-->
+                        </div><br>
+                        <div style="margin-left:-20px; " >
+                            License<span id="star">*</span><br>
+                            <div class="addiv" style="width:290px;height:30px;">
+                                <span>
+                                    <button type="button" id="addb" class="btn btn-secondary btn-lg" disabled>
+                                        <b
+                                            style="font-size:15px;padding-left:10px;padding-right:10px;margin-top:-7px;padding-top:-15px;display:grid;place-content: center;">ADD</b></button>
+                                </span>
+                                <input type="text" id="name">
+
+                            </div>
+
+                        </div><br>
+                        <div style="margin-left:-20px; " >
+                            Visiting Card<span id="star">*</span><br>
+                            <div class="addiv" style="width:290px;height:30px;">
+                                <span>
+                                    <button type="button" id="addb" class="btn btn-secondary btn-lg" disabled>
+                                        <b
+                                            style="font-size:15px;padding-left:10px;padding-right:10px;margin-top:-7px;padding-top:-15px;display:grid;place-content: center;">ADD</b></button>
+                                </span>
+                                <input type="text" id="name">
+
+                            </div>
+                        </div><br>
+                        <div style="margin-left:-20px; " >
+                            Union Card<span id="star">*</span><br>
+                            <div class="addiv" style="width:290px;height:30px;">
+                                <span>
+                                    <button type="button" id="addb" class="btn btn-secondary btn-lg" disabled>
+                                        <b
+                                            style="font-size:15px;padding-left:10px;padding-right:10px;margin-top:-7px;padding-top:-15px;display:grid;place-content: center;">ADD</b></button>
+                                </span>
+                                <input type="text" id="name">
+
+                            </div>
+                        </div><br>
+                        <div class="field-1" style="margin-left:-20px;">
+                            Equipments you use <span id="star">*</span><br>
+                            <div class="txarea">
+
+                                <span style="float: right;line-height: 24px;">+Add More</span><br>
+                                <span style="line-height: 24px;">Canon EOS 5D Mark iv 30.4 MP DSLR<input
+                                        type="radio"></span><br>
+                                <span style="line-height: 24px;"> ForexZone Drone with 4K Camera Live Video<input
+                                        type="radio"></span><br>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            <tr>
+                <td>
+                    <div>
+                        <input class="dec" type="checkbox" checked>&nbsp;&nbsp;I acknowledge that the provided details
+                        are corrext.
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+        </table>
+
+        <div style="display:grid;place-items:center;font-size:50px;margin-bottom:50px;margin-top:50px;">
+            <input class="btn btn-primary btn-lg" id="submit" type="submit" value="SUBMIT">
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
